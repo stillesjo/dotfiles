@@ -15,14 +15,6 @@ map <F2> :NERDTreeFocus<CR>
 map <F3> :NERDTreeToggle<CR>
 map <F4> :NERDTree<CR>
 
-" Colors
-if has("gui_running")
-  colors codeschool
-else
-  colors  solarized
-  set background=dark
-endif
-
 " Fix pathogen
 execute pathogen#infect()
 
@@ -47,3 +39,14 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-scriptease'
 Bundle 'vhdirk/vim-cmake'
 Bundle 'derekwyatt/vim-fswitch'
+Bundle '29decibel/codeschool-vim-theme'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-scripts/Wombat'
+
+" Colors
+if has("gui_running")
+  colors codeschool
+else
+  colors wombat
+  set background=light
+endif
