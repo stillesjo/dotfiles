@@ -20,6 +20,7 @@ if has("gui_running")
   colors codeschool
 else
   colors  solarized
+  set background=dark
 endif
 
 " Fix pathogen
@@ -46,3 +47,5 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-scriptease'
 Bundle 'vhdirk/vim-cmake'
 Bundle 'derekwyatt/vim-fswitch'
+Bundle 'decibel/codeschool-vim-theme'
+Bundel 'altercation/solarized'
