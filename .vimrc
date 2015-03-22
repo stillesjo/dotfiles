@@ -11,14 +11,16 @@ set number
 " Key bindings
 map <Right> :bn<CR>
 map <Left>  :bp<CR>
-
-
 map <F2> :NERDTreeFocus<CR>
 map <F3> :NERDTreeToggle<CR>
 map <F4> :NERDTree<CR>
 
 " Colors
-colors codeschool
+if has("gui_running")
+  colors codeschool
+else
+  colors  solarized
+endif
 
 " Fix pathogen
 execute pathogen#infect()
