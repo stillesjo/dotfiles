@@ -25,6 +25,10 @@ call vundle#rc()
 " NERDTree will ignore pyc-files
 let NERDTreeIgnore = ['\.pyc$']
 
+" Ctrl-P key bindings
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " My bundles
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
@@ -42,6 +46,7 @@ Bundle 'derekwyatt/vim-fswitch'
 Bundle '29decibel/codeschool-vim-theme'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/Wombat'
+Bundle 'kien/ctrlp.vim'
 
 " Colors
 if has("gui_running")
