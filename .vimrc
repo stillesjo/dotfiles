@@ -50,8 +50,16 @@ Bundle 'kien/ctrlp.vim'
 
 " Colors
 if has("gui_running")
-  colors codeschool
+  try
+    colors codeschool
+  catch 
+    colors desert
+  endtry
 else
-  colors wombat
-  set background=light
+  try
+    colors wombat
+    set background=light
+  catch
+    colors desert
+  endtry
 endif
