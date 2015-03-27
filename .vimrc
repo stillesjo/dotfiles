@@ -1,10 +1,14 @@
 " Just stuff
-set nocompatible
+syntax on
 filetype plugin on
 filetype indent on
-syntax on
+set nocompatible
+set novisualbell
+set noerrorbells
 set tabstop=2
 set shiftwidth=2 
+set cino=g0
+set showmatch
 set expandtab
 set number
 
@@ -48,6 +52,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/Wombat'
 Bundle 'kien/ctrlp.vim'
 
+set background=dark
+
 " Colors
 if has("gui_running")
   try
@@ -58,7 +64,6 @@ if has("gui_running")
 else
   try
     colors wombat
-    set background=light
   catch
     colors desert
   endtry
