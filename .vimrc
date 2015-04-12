@@ -51,6 +51,8 @@ Bundle '29decibel/codeschool-vim-theme'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/Wombat'
 Bundle 'kien/ctrlp.vim'
+Bundle 'honza/vim-snippets'
+
 
 set background=dark
 
