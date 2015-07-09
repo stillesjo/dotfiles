@@ -51,6 +51,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'vim-scripts/Wombat'
 Bundle 'kien/ctrlp.vim'
 Bundle 'honza/vim-snippets'
+Plugin 'morhetz/gruvbox'
 
 
 set background=dark
@@ -58,7 +59,8 @@ set background=dark
 " Colors
 if has("gui_running")
   try
-    colors codeschool
+    " colors codeschool
+    colors gruvbox
   catch 
     colors desert
   endtry
