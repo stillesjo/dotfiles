@@ -33,6 +33,9 @@ let NERDTreeIgnore = ['\.pyc$']
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" Ctrl-P ignore
+set wildignore+=*/bower_components/*,*/node_modules/*,*/.git/*
+
 " My bundles
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
