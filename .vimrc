@@ -58,6 +58,7 @@ set background=dark
 
 " Colors
 if has("gui_running")
+  set guifont=Monaco:h12.5,\ Consolas:h12.5,\ 'Courier\ New':h12.5,\ Courier:h12.5
   try
     " colors codeschool
     colors gruvbox
