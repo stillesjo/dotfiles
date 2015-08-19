@@ -1,4 +1,4 @@
-" Just stuff
+  " Just stuff
 syntax on
 filetype plugin on
 filetype indent on
@@ -34,23 +34,24 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " My bundles
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'SirVer/ultisnips'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-scriptease'
-Bundle 'vhdirk/vim-cmake'
-Bundle 'derekwyatt/vim-fswitch'
-Bundle '29decibel/codeschool-vim-theme'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'vim-scripts/Wombat'
-Bundle 'kien/ctrlp.vim'
-Bundle 'honza/vim-snippets'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/snipmate-snippets'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-scriptease'
+Plugin 'vhdirk/vim-cmake'
+Plugin 'derekwyatt/vim-fswitch'
+Plugin '29decibel/codeschool-vim-theme'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-scripts/Wombat'
+Plugin 'kien/ctrlp.vim'
+Plugin 'honza/vim-snippets'
 Plugin 'morhetz/gruvbox'
 
 
@@ -61,7 +62,8 @@ if has("gui_running")
   set guifont=Monaco:h12.5,\ Consolas:h12.5,\ 'Courier\ New':h12.5,\ Courier:h12.5
   try
     " colors codeschool
-    colors gruvbox
+    " colors gruvbox
+    colors Tomorrow-Night-Eighties
   catch 
     colors desert
   endtry
