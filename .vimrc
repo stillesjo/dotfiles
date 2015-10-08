@@ -53,6 +53,8 @@ Plugin 'vim-scripts/Wombat'
 Plugin 'kien/ctrlp.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'morhetz/gruvbox'
+Plugin 'scrooloose/syntastic'
+Plugin 'digitaltoad/vim-jade'
 
 
 set background=dark
