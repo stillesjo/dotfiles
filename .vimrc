@@ -10,7 +10,9 @@ set shiftwidth=2
 set cino=g0
 set showmatch
 set expandtab
-set number
+set laststatus=2
+let g:gitgutter_enabled = 0
+
 
 " Key bindings
 map <Right> :bn<CR>
@@ -18,6 +20,7 @@ map <Left>  :bp<CR>
 map <F2> :NERDTreeFocus<CR>
 map <F3> :NERDTreeToggle<CR>
 map <F4> :NERDTree<CR>
+map <C-g> :GitGutterToggle<CR>
 
 " Fix pathogen
 execute pathogen#infect()
@@ -55,13 +58,22 @@ Plugin 'honza/vim-snippets'
 Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/syntastic'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+
 
 
 set background=dark
 
 " Colors
 if has("gui_running")
-  set guifont=Monaco:h12.5,\ Consolas:h12.5,\ 'Courier\ New':h12.5,\ Courier:h12.5
+  if has("unix")
+    let s:uname = system("uname -s")
+    if s:uname == "Darwin"
+      set guifont=Monaco:h12.5,\ Consolas:h12.5,\ 'Courier\ New':h12.5,\ Courier:h12.5
+    endif
+  endif
+  set guioptions=aegiLt
   try
     " colors codeschool
     " colors gruvbox
